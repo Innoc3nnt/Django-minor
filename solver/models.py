@@ -1,0 +1,14 @@
+from django.db import models
+
+class Task(models.Model):
+    task = models.CharField(verbose_name="Формулировка  задачи", default="Какое это число: положительное, отрицательное, ноль?", max_length=255)
+    num = models.FloatField(verbose_name='Вещественное число')
+    current_date = models.DateTimeField(verbose_name="Дата создания", auto_now=True)
+
+    def __str__(self) -> str:
+        return f'{self.id} {self.task}'
+    
+    class Meta:
+        verbose_name = 'Задача'
+        verbose_name_plural = 'Задачи'
+        ordering = ('-id',)

@@ -1,0 +1,135 @@
+body {
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: aliceblue;
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-left: 0;
+  margin: 0;
+  height: 300px;
+  transition: 0.5s;
+  z-index: 4;
+}
+.nav-bar {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  position: sticky;
+  top: 0;
+  transition: 0.5s;
+  z-index: 4;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.nav li:hover {
+  transform: scale(1.1);
+}
+.nav li {
+  padding: 0;
+  padding-top: 85px;
+  transition: 1s;
+  z-index: 4;
+}
+.nav-item {
+  padding-top: 10vh;
+  z-index: 4;
+}
+.main {
+  font-size: 40px;
+  background-color: white;
+  color: black;
+  height: 100vh;
+  align-items: center;
+}
+/* .main p{
+  padding-top: 50px;
+} */
+.main li {
+  width: 20%;
+  padding-left: 0;
+  margin-left: 42.5%;
+  margin-right: 10%;
+}
+.ino {
+  transition: 0.5s;
+  z-index: 4;
+  position: relative;
+}
+.image {
+  width: 100%;
+}
+table,
+tr,
+td,
+art,
+.image {
+  margin: 0;
+  padding: 0;
+}
+.art shape {
+  height: 100px;
+  width: 100px;
+}
+.showcase {
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.dobro {
+  padding-left: 0;
+  margin-left: -95%;
+  color: rgb(128, 128, 128);
+}
+.contact {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+}
+.link{
+  transition: 0.5s;
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.link:hover {
+  transform: scale(1.1);
+}
+.icons{
+  margin-top: 5px;
+}
+.icons a {
+  width: 32px;
+}
+.icons a:visited
+{
+  color: aliceblue;
+  scale: 1;
+}
+.icons a img:hover {
+  transform: scale(1.1);
+}
+.icons a img {
+  transition: 0.5s;
+  width: 32px;
+}
+.bottom
+{
+  margin: 0;
+  padding: 0;
+}

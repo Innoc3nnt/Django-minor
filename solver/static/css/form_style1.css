@@ -1,0 +1,177 @@
+body {
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: aliceblue;
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-left: 0;
+  margin: 0;
+  height: 300px;
+  transition: 0.5s;
+  z-index: 4;
+}
+.nav-bar {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  position: sticky;
+  top: 0;
+  transition: 0.5s;
+  z-index: 4;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.nav li:hover {
+  transform: scale(1.1);
+}
+.nav li {
+  padding: 0;
+  padding-top: 85px;
+  transition: 1s;
+  z-index: 4;
+}
+.nav-item {
+  padding-top: 10vh;
+  z-index: 4;
+}
+.main {
+  background-color: none;
+  margin-top: 200px;
+  height: 60vh;
+  justify-content: center;
+}
+.ino {
+  transition: 0.5s;
+  z-index: 4;
+  position: relative;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: auto;
+  margin-top: 400px;
+  justify-content: flex-start;
+}
+.labels,
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20vh;
+  margin: 30px;
+}
+.labels {
+  justify-content: space-around;
+}
+input {
+  font-family: "Orbitron", sans-serif;
+  border-radius: 15px;
+  border: none;
+  background: transparent;
+  color: aliceblue;
+  height: 30px;
+  width: 200px;
+  background-image: linear-gradient(
+    270deg,
+    rgb(10, 10, 10) 0%,
+    rgba(255, 255, 255, 0.048) 100%
+  );
+  text-align-last: center;
+}
+.button {
+  margin-left: -50%;
+  margin-top: 50px;
+  width: 150px;
+}
+.button:hover,
+input:hover,
+input:focus {
+  background-image: linear-gradient(
+    270deg,
+    rgb(58, 29, 82) 0%,
+    rgba(255, 255, 255, 0.048) 100%
+  );
+  cursor: pointer;
+}
+.footer {
+  margin-left: -50%;
+}
+.example-1 .form-group {
+  padding: 1em;
+  margin: 1em;
+  height: 60px;
+  width: 60px;
+}
+.example-1 input[type="file"] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.example-1 .label {
+  width: 60px;
+  height: 60px;
+  border: 2px dashed grey;
+  border-radius: 5px;
+  display: block;
+  padding: 1.4em;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+}
+.example-1 .label i {
+  display: block;
+  font-size: 42px;
+  padding-bottom: 2px;
+}
+.example-1 .label i,
+.example-1 .label .title {
+  color: grey;
+  transition: 200ms color;
+}
+.example-1 .label:hover {
+  border: 2px solid rgb(58, 29, 82);
+}
+.example-1 .label:hover i,
+.example-1 .label:hover .title {
+  color: rgb(58, 29, 82);
+}
+.contact {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+}
+.contact a:hover {
+  transform: scale(1.1);
+}
+.icons a {
+  width: 32px;
+}
+.icons a img:hover {
+  transform: scale(1.1);
+}
+.icons a img {
+  transition: 0.5s;
+  width: 32px;
+}
+.active {
+  color: #3a1d52;
+}
+.icons {
+  margin-top: 5px;
+}

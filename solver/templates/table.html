@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table class="table table-bordered">
+        <tbody style="border-top: 3.0px;">
+        <tr>
+            {% for name in col_names %}
+                <td>{{ name }}</td>
+            {% endfor %}
+        </tr>
+        {% for row in table %}
+            <tr>
+                {% for item in row %}
+                    <td>
+                        {{ item }}
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        <tbody>
+    </table>
+    {% for item in stats %}
+    <p>
+        {% for k, v in  item.items %}
+            {{ k }}:  {{ v }};
+        {% endfor %}
+    </p>
+    {% endfor %}
+{% endblock %}
