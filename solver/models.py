@@ -4,6 +4,8 @@ class Task(models.Model):
     task = models.CharField(verbose_name="Формулировка  задачи", default="Какое это число: положительное, отрицательное, ноль?", max_length=255)
     num = models.FloatField(verbose_name='Вещественное число')
     current_date = models.DateTimeField(verbose_name="Дата создания", auto_now=True)
+    new_field_that_doesnt_work = models.FloatField(verbose_name='NOT WORKING!!')
+
 
     def __str__(self) -> str:
         return f'{self.id} {self.task}'
