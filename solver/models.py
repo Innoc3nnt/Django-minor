@@ -6,7 +6,6 @@ class Task(models.Model):
     current_date = models.DateTimeField(verbose_name="Дата создания", auto_now=True)
     new_field_that_work = models.FloatField(verbose_name='WORKING!!')
 
-
     def __str__(self) -> str:
         return f'{self.id} {self.task}'
     
